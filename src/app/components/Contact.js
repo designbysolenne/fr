@@ -6,8 +6,6 @@ import CTASend from '../assets/img/cta/send.png';
 import shapeOne from '../assets/img/cta/shape-bg1.png';
 import shapeTwo from '../assets/img/cta/shape-bg2.png';
 
-
-
 export default function Contact() {
     return (
         <section id="contact" className="pt-6">
@@ -19,7 +17,6 @@ export default function Contact() {
                             src={CTASend}
                             alt="Logo"
                         />
-
                     </div>
                     <div className="position-absolute end-0 top-0 z-index--1">
                         <Image

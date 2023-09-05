@@ -2,7 +2,8 @@ import Image from 'next/image';
 import Link from "next/link";
 
 import ImageLogo from '../assets/img/pictures/dbs-footer.png'
-
+import IconInstagram from '../assets/img/icons/instagram.svg';
+import IconFacebook from '../assets/img/icons/facebook-f.svg';
 
 export default function Footer() {
     return (
@@ -59,11 +60,11 @@ export default function Footer() {
                         <div className="mt-5 col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
                             <div className="icon-group mb-4">
                                 <a className="text-decoration-none icon-item shadow-social" id="facebook" href="#!">
-                                    <i className="fab fa-facebook-f"></i>
+                                    <Image src={IconFacebook} alt={'icon'} width={10}/>
                                 </a>
                                 <a className="text-decoration-none icon-item shadow-social" id="instagram"
                                    target="_blank" href="https://www.instagram.com/designbysolenne_/">
-                                    <i className="fab fa-instagram"></i>
+                                    <Image src={IconInstagram} alt={'icon'} width={16}/>
                                 </a>
                             </div>
                         </div>

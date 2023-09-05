@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import styles from '../globals.css'
 
-import Me from '../assets/img/pictures/photo.png';
+import Me from '../assets/img/pictures/photo_2.png';
 
 export default function Jumbotron() {
     return (
