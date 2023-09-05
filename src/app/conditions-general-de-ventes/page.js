@@ -21,7 +21,7 @@ export default function cgv() {
                             valeur de bon pour commande des services décrits dans le document présent (partie : mes
                             services) et précise les conditions dans lesquelles le client, charge Design By Solenne qui
                             l’accepte, de réaliser les prestations. Les parties conviennent que leurs relations seront
-                            exclusivement régies par le présent contrat, à l'exclusion de tout autre condition.
+                            exclusivement régies par le présent contrat, à l&apos;exclusion de tout autre condition.
                             Numéro de SIRET: 978 516 839 00013
                             En tant qu’auto-entreprise Design By Solenne n’est pas soumis à là TVA
                             (TVA non applicable - article 293 B du CGI)
@@ -43,7 +43,7 @@ export default function cgv() {
                             livraison de la prestation. En cas de retard de paiement, une pénalité de de 50€/jour est
                             exigible le jour suivant la date de règlement.
                             Pour rappel : Lutte contre les retards de paiement / Article 53 de la loi NRE
-                            Les paiements s'effectueront par virements bancaires, espèces ou par chèque (les coordonnées
+                            Les paiements s&apos;effectueront par virements bancaires, espèces ou par chèque (les coordonnées
                             bancaires seront transmises après la signature du devis).
                         </p>
                         <h4 className="dbs-text-pink">ARTICLE 4 : PROPRIÉTÉ INTELLECTUELLE</h4>
@@ -110,7 +110,7 @@ export default function cgv() {
                             DesignBySolenne le cahier des charges précis
                             détaillant la nature et l’environnement de la commande à réaliser. Si la société cliente ne
                             fournit pas de cahier des charges à DesignBySolenne avant le début de la réalisation de la
-                            commande, ou lorsque le cahier des charges ne donne pas d'indications ou de recommandations
+                            commande, ou lorsque le cahier des charges ne donne pas d&apos;indications ou de recommandations
                             suffisamment précises sur la façon dont doit être abordée la création d’un élément inclus
                             dans
                             la commande, les deux parties s’accordent sur le fait que la conception visuelle est laissée
@@ -140,8 +140,8 @@ export default function cgv() {
                             compositions
                             graphiques auprès de leur(s) propriétaire(s) ou ayant(s) droit, et d’en accepter les
                             conditions
-                            d'utilisation. Par la validation de l'œuvre ou partie de l'œuvre, la société cliente accepte
-                            l'introduction de toutes les sources inclues dans l'œuvre ou partie de l'œuvre.
+                            d&apos;utilisation. Par la validation de l&apos;œuvre ou partie de l&apos;œuvre, la société cliente accepte
+                            l&apos;introduction de toutes les sources inclues dans l&apos;œuvre ou partie de l&apos;œuvre.
                         </p>
                         <h4 className="dbs-text-pink">ARTICLE 9 : VALIDATION</h4>
                         <p className="mb-4 fw-medium">Le client s’engage à formuler ses validations de manière claire et
