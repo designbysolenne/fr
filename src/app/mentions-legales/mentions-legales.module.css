@@ -1,0 +1,7 @@
+.section {
+    padding-top: 7rem;
+}
+
+.bgHolder {
+    background-image:url(../assets/img/hero/hero-bg.svg);
+}
