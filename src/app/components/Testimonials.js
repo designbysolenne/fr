@@ -57,7 +57,7 @@ export default function Testimonials() {
                                         <div className="card shadow"  style={{ borderRadius: 10 }}>
                                             <div className="card-body p-4">
                                                 <p className="fw-medium mb-4">&quot;Cerne très bien les attentes des
-                                                    clients. S&apost;adapte aux demandes. Très rapide, professionnel et
+                                                    clients. S&apos;adapte aux demandes. Très rapide, professionnel et
                                                     efficace. Je recommande.&quot;</p>
                                                 <h5 className="dbs-text-blue">Mélissa.G</h5>
                                                 <p className="fw-medium fs--1 mb-0">Vosges</p>
