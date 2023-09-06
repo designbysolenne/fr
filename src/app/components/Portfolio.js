@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import SlideItem from "@/app/components/SlideItem";
 
-import Shape from '../assets/img/category/shape.svg';
+import Shape from '@/app/assets/img/cover/shape-cross.svg';
 
 import Skateboard from '../assets/img/pictures/portfolio/affiche-002.png';
 import PetSitter from '../assets/img/pictures/portfolio/depliant002.png';

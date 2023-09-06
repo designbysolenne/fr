@@ -75,7 +75,7 @@ export default function Footer() {
             <div className="py-5 text-center">
                 <p className="mb-0 text-secondary fs--1 fw-medium">
                     Tous droits réservé, 2023 Design By Solenne -
-                    <Link className="footer-link cgv-link" href="/conditions-general-de-ventes">CGV</Link> -
+                    <Link className="footer-link cgv-link" href="/conditions-generales-de-vente">CGV</Link> -
                     <Link className="footer-link ml-link" href="/mentions-legales">Mentions Légales</Link>
                 </p>
             </div>

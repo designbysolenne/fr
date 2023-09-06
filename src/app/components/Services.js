@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Shape from "../assets/img/category/shape.svg";
+import Shape from "@/app/assets/img/cover/shape-cross.svg";
 import Affiche from "../assets/img/pictures/affiche-flyers.png";
 import Invitation from "../assets/img/pictures/faire-part-invitation.png";
 import Catalogue from "../assets/img/pictures/carte-de-visite.png";

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Background from "@/app/assets/img/steps/bg.png";
+import Background from "@/app/assets/img/cover/bg.png";
 
 export default function CardSlideItem(props) {
     const { image, alternativeText, title, date, id } = props;
