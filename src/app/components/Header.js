@@ -7,7 +7,7 @@ export default function Header() {
     return (
             <nav className="navbar navbar-expand-lg bg-white fixed-top d-block">
                 <div className="container">
-                    <Link href="/" id="home-page" className="navbar-brand">
+                    <Link href="/" id="home-page" className="navbar-brand" aria-current="page">
                         <Image
                             id="img-header"
                             src={ImageLogo}
