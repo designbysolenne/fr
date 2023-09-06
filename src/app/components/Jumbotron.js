@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import Me from '../assets/img/pictures/photo_2.png';
+import Me from '../assets/img/pictures/photo_profil_solenne.png';
 import bgWave from '../assets/img/cover/hero-bg.svg';
 
 export default function Jumbotron() {
