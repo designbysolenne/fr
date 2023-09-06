@@ -7,14 +7,14 @@ export default function Header() {
     return (
             <nav className="navbar navbar-expand-lg bg-white fixed-top d-block">
                 <div className="container">
-                    <a className="navbar-brand" href="/">
+                    <Link href="/" id="home-page" className="navbar-brand">
                         <Image
                             id="img-header"
                             src={ImageLogo}
                             alt="Logo"
                             height={90}
                         />
-                    </a>
+                    </Link>
                     <button className="bg-danger rounded navbar-toggler" type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent"
