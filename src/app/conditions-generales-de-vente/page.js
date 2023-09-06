@@ -1,10 +1,9 @@
-import styles from './cgv.module.css';
+import bgWave from '../assets/img/cover/hero-bg.svg';
 
 export default function cgv() {
     return (
-        <section className={styles.section}>
-            <div className={styles.bgHolder}>
-            </div>
+        <section style={{ paddingTop: '7rem' }}>
+            <div className="bg-holder" style={{ backgroundImage: `url(${bgWave.src})` }}></div>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-12 col-lg-12 text-md-start text-center py-6">

@@ -1,14 +1,12 @@
 import Image from 'next/image';
 
-import styles from '../globals.css';
-
 import Me from '../assets/img/pictures/photo_2.png';
+import bgWave from '../assets/img/cover/hero-bg.svg';
 
 export default function Jumbotron() {
     return (
-        <section className="pt-10">
-            <div className={styles.bgHolder}>
-            </div>
+        <section style={{ paddingTop: '7rem' }}>
+            <div className="bg-holder" style={{ backgroundImage: `url(${bgWave.src})` }}></div>
 
             <div className="container">
                 <div className="row align-items-center">
