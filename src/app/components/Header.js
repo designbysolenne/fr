@@ -41,7 +41,7 @@ export default function Header() {
                                 <Link href="#realisation" id="portfolio-link" className="nav-link fw-medium" aria-current="page">Portfolio</Link>
                             </li>
                             <li className="nav-item px-3 px-xl-4">
-                                <Link href="testimonial" id="temoignages-link" className="nav-link fw-medium" aria-current="page">Témoignages</Link>
+                                <Link href="#testimonial" id="temoignages-link" className="nav-link fw-medium" aria-current="page">Témoignages</Link>
                             </li>
                             <li className="nav-item px-3 px-xl-4">
                                 <Link href="#contact" id="contact-link" className="nav-link fw-medium" aria-current="page">Contact</Link>
