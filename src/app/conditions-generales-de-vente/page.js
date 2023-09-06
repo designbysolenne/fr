@@ -1,4 +1,4 @@
-import styles from './cgv.module.css'
+import styles from './cgv.module.css';
 
 export default function cgv() {
     return (

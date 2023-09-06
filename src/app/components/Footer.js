@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from "next/link";
 
-import ImageLogo from '../assets/img/pictures/dbs-footer.png'
+import ImageLogo from '../assets/img/pictures/dbs-footer.png';
 import IconInstagram from '../assets/img/icons/instagram.svg';
 import IconFacebook from '../assets/img/icons/facebook-f.svg';
 

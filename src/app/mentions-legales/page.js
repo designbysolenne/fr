@@ -1,5 +1,4 @@
-import styles from './mentions-legales.module.css'
-
+import styles from './mentions-legales.module.css';
 
 export default function legacy() {
     return (

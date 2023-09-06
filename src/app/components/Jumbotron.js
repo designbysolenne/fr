@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-import styles from '../globals.css'
+import styles from '../globals.css';
 
 import Me from '../assets/img/pictures/photo_2.png';
 

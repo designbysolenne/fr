@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 import Shape from "@/app/assets/img/cover/shape-cross.svg";
 import Affiche from "../assets/img/pictures/affiche-flyers.png";
