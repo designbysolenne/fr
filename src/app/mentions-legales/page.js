@@ -9,8 +9,8 @@ export default function Legacy() {
                     <div className="col-md-12 col-lg-12 text-md-start text-center py-6">
                         <h1 className="hero-title">Mentions - Legales</h1>
                         <h4 className="dbs-text-pink">Édition du site Internet</h4>
-                        <p className="mb-2 fw-medium">Le site Design By Solenne (ci-après "le Site"), accessible à l’adresse
-                            <a href="https://designbysolenne.com">https://designbysolenne.com</a> est édité par Solenne Loury (ci-après "l'Editeur")
+                        <p className="mb-2 fw-medium">Le site Design By Solenne (ci-après le Site), accessible à l&apos;adresse
+                            <a href="https://designbysolenne.com">https://designbysolenne.com</a> est édité par Solenne Loury (ci-après l&apos;Editeur)
                         </p>
                         <ul>
                             <li>Microentreprise ont le siège social est situé à Nantes.</li>
@@ -30,7 +30,7 @@ export default function Legacy() {
                         </ul>
 
                         <h4 className="dbs-text-pink">Droit d’auteur</h4>
-                        <p className="mb-4 fw-medium">L’ensemble de ce site relève des législations françaises et
+                        <p className="mb-4 fw-medium">L&apos;ensemble de ce site relève des législations françaises et
                             internationales sur le droit d’auteur et la propriété intellectuelle. Tous les droits de
                             reproduction sont réservés, y compris pour les documents iconographiques et photographiques. La
                             majorité des visuels utilisés pour mes créations sont gratuits et libres de droits.
