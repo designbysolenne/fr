@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import SlideItem from "@/app/components/SlideItem";
+
 import Shape from '../assets/img/category/shape.svg';
 
 import Skateboard from '../assets/img/pictures/portfolio/affiche-002.png';
@@ -16,7 +18,6 @@ import SalonCoiffure from '../assets/img/pictures/portfolio/cartevisite001.png';
 
 import IconLeftArrow from '../assets/img/icons/up.svg';
 import IconRightArrow from '../assets/img/icons/down.svg';
-import SlideItem from "@/app/components/SlideItem";
 
 export default function Portfolio() {
     const dataTargetsPrefixes = ["slide_one", "slide_two", "slide_three"]; // Préfixes d'ID uniques
@@ -84,7 +85,6 @@ export default function Portfolio() {
         }
     ];
 
-
     return (
         <div id="realisation" className="container">
             <div className="position-absolute z-index--1 end-0 d-none d-lg-block">
@@ -99,9 +99,18 @@ export default function Portfolio() {
                         <div className="carousel slide  position-static" id="testimonialIndicator1"
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
-                                <SlideItem isActive={'active'} dataTargetsPrefix={dataTargetsPrefixes[0]} cards={cardDataSlideOne} />
-                                <SlideItem isActive={''} dataTargetsPrefix={dataTargetsPrefixes[1]} cards={cardDataSlideTwo} />
-                                <SlideItem isActive={''} dataTargetsPrefix={dataTargetsPrefixes[2]} cards={cardDataSlideThree} />
+                                <SlideItem isActive={'active'}
+                                           dataTargetsPrefix={dataTargetsPrefixes[0]}
+                                           cards={cardDataSlideOne}
+                                />
+                                <SlideItem isActive={''}
+                                           dataTargetsPrefix={dataTargetsPrefixes[1]}
+                                           cards={cardDataSlideTwo}
+                                />
+                                <SlideItem isActive={''}
+                                           dataTargetsPrefix={dataTargetsPrefixes[2]}
+                                           cards={cardDataSlideThree}
+                                />
                             </div>
                         </div>
                         <div

@@ -8,7 +8,7 @@ export default function cgv() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-12 col-lg-12 text-md-start text-center py-6">
-                        <h1 className="hero-title">Condition Generales de Ventes</h1>
+                        <h1 className="hero-title">Conditions Generales de Vente</h1>
                         <h4 className="dbs-text-pink">ARTICLE 1 : OBJET</h4>
                         <p className="mb-4 fw-medium">Design By Solenne a pour activité principale le graphisme.
                             Le terme “Client” désigne toute personne morale ou physique ayant requis les services de
