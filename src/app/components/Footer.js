@@ -59,7 +59,8 @@ export default function Footer() {
 
                         <div className="mt-5 col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
                             <div className="icon-group mb-4">
-                                <a className="text-decoration-none icon-item shadow-social" id="facebook" href="#!">
+                                <a className="text-decoration-none icon-item shadow-social" id="facebook" 
+                                   target="_blank" href="https://www.facebook.com/people/Design-By-Solenne/61550969013302/">
                                     <Image src={IconFacebook} alt={'icon'} width={10}/>
                                 </a>
                                 <a className="text-decoration-none icon-item shadow-social" id="instagram"
