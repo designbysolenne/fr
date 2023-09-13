@@ -29,12 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Initialisation
-        run: |
-          env
-          echo "Valeur du secret : ${{ secrets.ENV_FILE }}"
-          echo "${{ secrets.ENV_FILE }}" > .env
-
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
