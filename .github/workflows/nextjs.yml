@@ -30,8 +30,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Initialisation
+        env:
+          PROD_ENV_FILE: ${{ secrets.ENV_FILE  }}
         run: |
-          echo "${{ secrets.ENV_FILE }}"
+          echo "$PROD_ENV_FILE ${{PROD_ENV_FILE}}"
           echo "${{ secrets.ENV_FILE }}" > .env
 
       - name: Checkout
