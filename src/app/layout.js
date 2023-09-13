@@ -4,6 +4,8 @@ import Footer from "@/app/components/Footer";
 import './assets/css/theme.css';
 import Script from "next/script";
 
+require('dotenv').config();
+
 export const metadata = {
   title: 'Design By Solenne | Graphiste Freelance',
   description: 'Design By Solenne | Graphiste Freelance',
