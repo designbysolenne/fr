@@ -1,8 +1,15 @@
-const mailjet = require('node-mailjet');
+import mailjet from 'node-mailjet';
 
 const mailjetClient = mailjet.apiConnect(
-    process.env.MAILJET_API_PUBLIC_KEY,
-    process.env.MAILJET_API_PRIVATE_KEY
+    String(process.env.MAILJET_API_PUBLIC_KEY),
+    String(process.env.MAILJET_API_PRIVATE_KEY),
+    {
+        options: {
+            timeout: 1000,
+            maxBodyLength: 1500,
+            maxContentLength: 100,
+        }
+    }
 )
 
 export async function sendEmail({ to, from, subject, message }) {
@@ -26,7 +33,14 @@ export async function sendEmail({ to, from, subject, message }) {
     };
 
     try {
-        const result = await mailjetClient.post('send', { version: 'v3.1' }).request(emailData);
+        const result = await mailjetClient.post(
+            'send', {
+                host: 'api.mailjet.com',
+                version: 'v3.1',
+                output: 'json',
+            }
+        ).request(emailData);
+
         console.log('Email sent successfully!');
         return result;
     } catch (error) {

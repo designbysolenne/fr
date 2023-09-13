@@ -1,9 +1,9 @@
-import Image from "next/image";
+'use client';
 
 import { sendEmail } from '../utils/email.js';
 
+import Image from "next/image";
 import styles from './contact.module.css'
-
 import CTASend from '../assets/img/cta/send.png';
 import shapeOne from '../assets/img/cta/shape-bg1.png';
 import shapeTwo from '../assets/img/cta/shape-bg2.png';
@@ -24,7 +24,6 @@ export default function Contact({ to, from, subject, message }) {
             console.error('Error sending email:', error);
         }
     };
-
 
     return (
         <section id="contact" className="pt-6">

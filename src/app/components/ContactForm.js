@@ -1,5 +1,6 @@
+'use client';
+
 import React, { useState } from 'react';
-'use client'
 
 export default function ContactForm({ onSubmit }) {
     const [firstName, setFirstName] = useState('');
@@ -11,7 +12,11 @@ export default function ContactForm({ onSubmit }) {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        // Package the form data into an object
+        if (!firstName || !lastName || !email || !userMessage) {
+            alert('Veuillez remplir tous les champs obligatoires.');
+            return;
+        }
+
         const formData = {
             firstName,
             lastName,
@@ -20,7 +25,6 @@ export default function ContactForm({ onSubmit }) {
             userMessage,
         };
 
-        // Call the onSubmit callback passed from the parent component
         onSubmit(formData);
     };
 
