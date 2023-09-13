@@ -33,8 +33,8 @@ jobs:
         run: |
           env
           echo "Valeur du secret : ${{ secrets.ENV_FILE }}"
-          echo "${{ secrets.ENV_FILE }}" > .env "
           echo "${{ secrets.ENV_FILE }}" > .env
+
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
