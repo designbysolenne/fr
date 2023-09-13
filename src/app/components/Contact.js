@@ -1,12 +1,31 @@
 import Image from "next/image";
 
+import { sendEmail } from '../utils/email.js';
+
 import styles from './contact.module.css'
 
 import CTASend from '../assets/img/cta/send.png';
 import shapeOne from '../assets/img/cta/shape-bg1.png';
 import shapeTwo from '../assets/img/cta/shape-bg2.png';
+import dynamic from "next/dynamic";
 
-export default function Contact() {
+const ContactForm = dynamic(
+    () => import('./ContactForm'), { ssr: false }
+);
+
+export default function Contact({ to, from, subject, message }) {
+
+    const handleSubmit = async (formData) => {
+        // Pass formData to sendEmail function
+        try {
+            await sendEmail({ ...formData, to, from, subject, message });
+            console.log('Email sent successfully!');
+        } catch (error) {
+            console.error('Error sending email:', error);
+        }
+    };
+
+
     return (
         <section id="contact" className="pt-6">
             <div className="container">
@@ -32,49 +51,7 @@ export default function Contact() {
                             alt="Logo"
                         />
                     </div>
-                    <div className="row justify-content-center">
-                        <div className="col-lg-10 col-md-10">
-                            <h2 className="text-secondary lh-1-7 mb-7">Contactez-moi</h2>
-                            <div className="row">
-                                <div className="col-6 p-2">
-                                    <div className="input-group-icon">
-                                        <input className="form-control form-little-squirrel-control" type="text"
-                                               placeholder="Saisir votre prénom " aria-label="firstname"/>
-                                    </div>
-                                </div>
-                                <div className="col-6 p-2">
-                                    <div className="input-group-icon">
-                                        <input className="form-control form-little-squirrel-control" type="text"
-                                               placeholder="Saisir votre nom" aria-label="lastname"/>
-                                    </div>
-                                </div>
-                                <div className="col-6 p-2">
-                                    <div className="input-group-icon">
-                                        <input className="form-control form-little-squirrel-control" type="email"
-                                               placeholder="Saisir l'email " aria-label="email"/>
-                                    </div>
-                                </div>
-                                <div className="col-6 p-2">
-                                    <div className="input-group-icon">
-                                        <input className="form-control form-little-squirrel-control" type="text"
-                                               placeholder="Saisir la société" aria-label="company"/>
-                                    </div>
-                                </div>
-                                <div className="col-12 p-2">
-                                    <div className="input-group-icon">
-                                        <textarea className="form-control form-little-squirrel-control" type="text"
-                                                  placeholder="Votre message" aria-label="message"></textarea>
-                                    </div>
-                                </div>
-                                <div className="col-12">
-                                    <button
-                                        className="btn btn-primary btn-lg fs-1 me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow">Commencez
-                                        l’aventure avec moi !
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ContactForm onSubmit={handleSubmit} />
                 </div>
             </div>
         </section>
