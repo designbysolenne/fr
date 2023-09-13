@@ -31,7 +31,7 @@ jobs:
     steps:
       - name : Initialisation
         run: |
-          echo "Valeur du secret : ${{ secrets.ENV_FILE }}"
+          echo "${{ secrets.ENV_FILE }}"
           echo "${{ secrets.ENV_FILE }}" > .env
 
       - name: Checkout
