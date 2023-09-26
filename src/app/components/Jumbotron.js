@@ -28,7 +28,7 @@ export default function Jumbotron() {
                         <h4 className="fw-bold text-danger mb-3">Alors, prêt à démarrer votre projet avec moi ?</h4>
                         <div className="text-center text-md-start">
                             <a className="btn btn-primary btn-lg primary-btn-shadow"
-                               href="#contact" role="button">C&apos;est parti
+                               href="mailto:designbysolenne@gmail.com" role="button">C&apos;est parti
                             </a>
                         </div>
                     </div>
