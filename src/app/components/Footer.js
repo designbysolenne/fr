@@ -52,7 +52,7 @@ export default function Footer() {
                                 </li>
                                 <li className="mb-2">
                                     <a className="link-900 fs-1 fw-medium text-decoration-none"
-                                       href="#contact">Contact</a>
+                                       href="mailto:designbysolenne@gmail.com">Contact</a>
                                 </li>
                             </ul>
                         </div>
