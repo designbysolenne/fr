@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-import ImageLogo from '../assets/img/pictures/design-by-solenne.png'
+import ImageLogo from '../assets/img/pictures/desingbysolenne.png'
 
 export default function Header() {
     return (
@@ -12,7 +12,7 @@ export default function Header() {
                             id="img-header"
                             src={ImageLogo}
                             alt="Logo"
-                            height={90}
+                            height={70}
                         />
                     </Link>
                     <button className="bg-danger rounded navbar-toggler" type="button"

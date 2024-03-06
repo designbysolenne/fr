@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from "next/link";
 
-import ImageLogo from '../assets/img/pictures/dbs-footer.png';
+import ImageLogo from '../assets/img/pictures/designbysolenne-footer.png';
 import IconInstagram from '../assets/img/icons/instagram.svg';
 import IconFacebook from '../assets/img/icons/facebook-f.svg';
 
@@ -14,8 +14,8 @@ export default function Footer() {
                         <div className="col-lg-4 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
                             <Image
                                 src={ImageLogo}
-                                alt="jadoo"
-                                width={250}
+                                alt="logo dbs"
+                                width={150}
                             />
                             <p className="fs--1 text-secondary mb-0 fw-medium">Transformez vos idées en images
                                 percutantes avec une graphiste freelance passionnée !</p>
