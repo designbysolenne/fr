@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 import Shape from "@/app/assets/img/cover/shape-cross.svg";
-import Affiche from "../assets/img/pictures/affiche-flyers.png";
-import Invitation from "../assets/img/pictures/faire-part-invitation.png";
-import Catalogue from "../assets/img/pictures/carte-de-visite.png";
-import Social from "../assets/img/pictures/social-media.png";
+import Logo from "../assets/img/pictures/logo2.png";
+import SupportPrint from "../assets/img/pictures/depliant001.jpg";
+import Packaging from "../assets/img/pictures/packaging02.png";
+import Social from "../assets/img/pictures/reseaux-sociaux.png";
 
 export default function Services() {
     return (
@@ -14,7 +14,7 @@ export default function Services() {
                     <Image
                         src={Shape}
                         alt="Services"
-                        style={{ maxWidth: 200 }}
+                        style={{maxWidth: 200}}
                     />
                 </div>
                 <div className="mb-7 text-center">
@@ -24,64 +24,101 @@ export default function Services() {
                 </div>
                 <div className="row">
                     <div className="col-lg-3 col-sm-6 mb-6">
-                        <div className="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div className="card-body p-xxl-5 p-4">
-                                <Image
-                                    src={Affiche}
-                                    alt="Affiche, Menu et Flyers"
-                                    width={150}
-                                />
-                                <h4 className="mb-3">Affiche, Flyer & Menu</h4>
-                                <p className="mb-0 fw-medium">Des designs attractifs qui captent l’attention et
-                                    communiquent votre message
-                                </p>
+                        <div className="card service-card shadow-hover rounded-3 shadow">
+                            <Image src={Logo} className="card-img-top"
+                                   alt="Réseaux Sociaux"
+                                   height={250}/>
+                            <div>
+                                <div className="position-relative top-0 start-50 translate-middle text-center align-items-center">
+                                    <button className="btn btn-primary fw-bold p-3">
+                                        Identité visuelle
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <ul>
+                                    <li>Création de logo</li>
+                                    <li>Charte graphique</li>
+                                    <li>Carte de visite</li>
+                                    <li>Mockup</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-3 col-sm-6 mb-6">
-                        <div className="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div className="card-body p-xxl-5 p-4">
-                                <Image
-                                    src={Invitation}
-                                    alt="Faire Part et invitation"
-                                    width={150}
-                                />
-                                <h4 className="mb-3">Faire-part & Invitation</h4>
-                                <p className="mb-0 fw-medium">Des créations uniques pour marquer les événements qui vous
-                                    tiennent à coeur</p>
+                        <div className="card service-card shadow-hover rounded-3 shadow">
+                            <Image src={SupportPrint} className="card-img-top"
+                                   alt="Réseaux Sociaux"
+                                   height={250}/>
+                            <div>
+                                <div
+                                    className="position-relative top-0 start-50 translate-middle text-center align-items-center">
+                                    <button className="btn btn-primary fw-bold p-3">
+                                        Support Print
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <ul>
+                                    <li>Affiche</li>
+                                    <li>Flyer / Plaquette</li>
+                                    <li>Menu</li>
+                                    <li>Carte / Invitation / Faire part</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-3 col-sm-6 mb-6">
-                        <div className="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div className="card-body p-xxl-5 p-4">
-                                <Image
-                                    src={Catalogue}
-                                    alt="Carte de visite"
-                                    width={150}
-                                />
-                                <h4 className="mb-3">Carte de visite, brochure & catalogue</h4>
-                                <p className="mb-0 fw-medium">Des cartes de visite, brochures et catalogues
-                                    professionnelles qui laissent une impression mémorable.
-                                </p>
+                        <div className="card service-card shadow-hover rounded-3 shadow">
+                            <Image src={Packaging} className="card-img-top"
+                                   alt="Réseaux Sociaux"
+                                   height={250}/>
+                            <div>
+                                <div
+                                    className="position-relative top-0 start-50 translate-middle text-center align-items-center">
+                                    <button className="btn btn-primary fw-bold p-3">
+                                        Packaging
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <ul>
+                                    <li>Conception visuelle</li>
+                                    <li>Emballage</li>
+                                    <li>Étiquetage</li>
+                                    <li>Mockup</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-3 col-sm-6 mb-6">
-                        <div className="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div className="card-body p-xxl-5 p-4">
-                                <Image
-                                    src={Social}
-                                    alt="Réseaux Sociaux"
-                                    width={150}
-                                />
-                                <h4 className="mb-3">Réseaux <br/>sociaux</h4>
-                                <p className="mb-0 fw-medium">Des créations de contenus visuels attrayants pour
-                                    renforcer votre présence en ligne.
-                                </p>
+                        <div className="card service-card shadow-hover rounded-3 shadow">
+                            <Image src={Social} className="card-img-top"
+                                   alt="Réseaux Sociaux"
+                                   height={250}
+                            />
+                            <div>
+                                <div
+                                    className="position-relative top-0 start-50 translate-middle text-center align-items-center">
+                                    <button className="btn btn-primary fw-bold p-3">
+                                        Réseaux Sociaux
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <ul>
+                                    <li>Feed Instagram</li>
+                                    <li>Visuel</li>
+                                    <li>Bannière</li>
+                                    <li>Template Story</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
