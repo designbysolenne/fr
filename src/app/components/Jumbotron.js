@@ -21,9 +21,8 @@ export default function Jumbotron() {
                     <div className="col-md-7 col-lg-6 text-md-start text-center py-6">
                         <h1 className="hero-title">Graphiste Freelance</h1>
                         <p className="mb-4 fw-medium">
-                            J’accompagne les petites et moyennes entreprises ainsi que les particuliers dans la création
-                            de supports de communication print et digitaux pour leurs projets. Je m’engage à concevoir
-                            des designs percutants et captivants qui répondent à vos besoins de communication.
+                            Je crée votre identité visuelle et vos supports de communication en puisant dans
+                            l’inspiration de l’océan. Ensemble, embarquons vers le succès de votre projet !
                         </p>
                         <h4 className="fw-bold text-danger mb-3">Alors, prêt à démarrer votre projet avec moi ?</h4>
                         <div className="text-center text-md-start">

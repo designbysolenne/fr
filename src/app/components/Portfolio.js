@@ -1,137 +1,258 @@
 import Image from 'next/image';
 
-import SlideItem from "@/app/components/SlideItem";
-
 import Shape from '@/app/assets/img/cover/shape-cross.svg';
 
-import Skateboard from '../assets/img/pictures/portfolio/affiche-002.png';
-import PetSitter from '../assets/img/pictures/portfolio/depliant002.png';
-import Mariage from '../assets/img/pictures/portfolio/faire-part001.png';
-
-import AfterWork from '../assets/img/pictures/portfolio/invitation001.png';
-import Restaurant from '../assets/img/pictures/portfolio/depliant003.png';
-import CarteBenoit from '../assets/img/pictures/portfolio/cartevisite003.png';
-
-import Surfer from '../assets/img/pictures/portfolio/affiche-001.png';
-import Yoga from '../assets/img/pictures/portfolio/depliant001.jpg';
-import SalonCoiffure from '../assets/img/pictures/portfolio/cartevisite001.png';
-
-import IconLeftArrow from '../assets/img/icons/up.svg';
-import IconRightArrow from '../assets/img/icons/down.svg';
+import LogoPia from "../assets/img/pia-logo.jpg";
+import PiaPackaging from "../assets/img/pia-packaging2.jpg";
+import SanMarcoCarte from "../assets/img/san-marco-carte.jpg";
+import GardeOToitLogo from "../assets/img//gardeotoit-logo.jpg";
+import GardeOToitPackaging from "../assets/img/gardeotoit-packaging2.jpg";
+import GardeOToitAffiche from "../assets/img/gardeotoit-affiche.jpg";
+import MoutainTrailLogo from "../assets/img/moutaintrail-logo.jpg";
+import MoutainTrailFeedInstagram from "../assets/img/moutaintrail-feedinsta.jpg";
+import SpaarpleCarte from "../assets/img/spaarple-carte.jpg";
 
 export default function Portfolio() {
-    const dataTargetsPrefixes = ["slide_one", "slide_two", "slide_three"]; // Préfixes d'ID uniques
-
-    const cardDataSlideOne = [
-        {
-            image: Skateboard,
-            alternativeText: "Affiche Skateboard",
-            title: "Affiche Skateboard",
-            date: "2022",
-        },
-        {
-            image: PetSitter,
-            alternativeText: "Dépliant Pet-Sitter",
-            title: "Dépliant Pet-Sitter",
-            date: "2022"
-        },
-        {
-            image: Mariage,
-            alternativeText: "Faire-part mariage",
-            title: "Faire-part mariage",
-            date: "2017",
-        }
-    ];
-
-    const cardDataSlideTwo = [
-        {
-            image: AfterWork,
-            alternativeText: "Invitation After-work",
-            title: "Invitation After-work",
-            date: "2023"
-        },
-        {
-            image: Restaurant,
-            alternativeText: "Dépliant restaurant",
-            title: "Dépliant restaurant",
-            date: "2023"
-        },
-        {
-            image: CarteBenoit,
-            alternativeText: "Carte de visite - Kinésithérapeute",
-            title: "Carte de visite - Kinésithérapeute",
-            date: "2022"
-        }
-    ];
-
-    const cardDataSlideThree = [
-        {
-            image: Surfer,
-            alternativeText: "Affiche surf compétition",
-            title: "Affiche surf compétition",
-            date: "2023"
-        },
-        {
-            image: Yoga,
-            alternativeText: "Dépliant Yoga",
-            title: "Dépliant Yoga",
-            date: "2023"
-        },
-        {
-            image: SalonCoiffure,
-            alternativeText: "Carte de visite - Salon de coiffure",
-            title: "Carte de visite - Salon de coiffure",
-            date: "2022"
-        }
-    ];
 
     return (
         <div id="realisation" className="container">
             <div className="position-absolute z-index--1 end-0 d-none d-lg-block">
-                <Image src={Shape} alt={'service'} style={{ maxWidth: 200 }}/>
+                <Image src={Shape} alt={'service'} style={{maxWidth: 200}}/>
             </div>
             <div className="mb-7 text-center">
                 <h3 className="fw-bold font-cursive text-capitalize">Mon Portfolio</h3>
             </div>
-            <div className="row">
-                <div className="col-12">
-                    <div className="">
-                        <div className="carousel slide  position-static" id="testimonialIndicator1"
-                             data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <SlideItem isActive={'active'}
-                                           dataTargetsPrefix={dataTargetsPrefixes[0]}
-                                           cards={cardDataSlideOne}
+
+            <div className="container text-center">
+                <div className="row gx-5">
+                    <div className="col-12 mb-5">
+                        <button id="identite-visuelle" className="mx-1 p-2 border rounded-1 btn-primary">Tous les
+                            projets
+                        </button>
+                        <button id="identite-visuelle" className="mx-1 p-2 border rounded-1 btn-primary">Identité
+                            visuelle
+                        </button>
+                        <button className="mx-1 p-2 border rounded-1 btn-primary">Packaging</button>
+                        <button className="mx-1 p-2 border rounded-1 btn-primary">Templates Instagram</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="d-flex justify-content-center">
+                <div className="row">
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={LogoPia} data-bs-target="#logoPiaModal" data-bs-toggle="modal">
+                                <Image className="identite-visuelle" src={LogoPia} alt="Réseaux Sociaux"
+                                       height={300} width={300}
                                 />
-                                <SlideItem isActive={''}
-                                           dataTargetsPrefix={dataTargetsPrefixes[1]}
-                                           cards={cardDataSlideTwo}
-                                />
-                                <SlideItem isActive={''}
-                                           dataTargetsPrefix={dataTargetsPrefixes[2]}
-                                           cards={cardDataSlideThree}
-                                />
-                            </div>
+                            </a>
                         </div>
-                        <div
-                            className="carousel-navigation  d-flex flex-column flex-between-center text-center position-relative position-absolute top-50 start-50 translate-middle"
-                            style={{ height: 60, width: 20, rotate: '90deg' }}>
-                            <button className="carousel-control-prev position-static"
-                                    type="button"
-                                    data-bs-target="#testimonialIndicator1"
-                                    data-bs-slide="prev">
-                                <Image src={IconLeftArrow} alt={'icon'} width={16}/>
-                            </button>
-                            <button className="carousel-control-next position-static"
-                                    type="button"
-                                    data-bs-target="#testimonialIndicator1"
-                                    data-bs-slide="next">
-                                <Image src={IconRightArrow} alt={'icon'} width={16}/>
-                            </button>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={SanMarcoCarte} data-bs-target="#SanMarcoCarte" data-bs-toggle="modal">
+                                <Image src={SanMarcoCarte} className="" alt="Réseaux Sociaux"
+                                       height={300} width={300}/>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={GardeOToitLogo} data-bs-target="#GardeOToitLogo" data-bs-toggle="modal">
+                                <Image src={GardeOToitLogo} className="" alt="Réseaux Sociaux"
+                                       height={300} width={300}/>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="d-flex justify-content-center">
+                <div className="row">
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={GardeOToitAffiche} data-bs-target="#GardeOToitAffiche" data-bs-toggle="modal">
+                                <Image className="identite-visuelle" src={GardeOToitAffiche} alt="Réseaux Sociaux"
+                                       height={300} width={300}
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={PiaPackaging} data-bs-target="#PiaPackaging" data-bs-toggle="modal">
+                                <Image src={PiaPackaging} className="" alt="Réseaux Sociaux"
+                                       height={300} width={300}/>
+                                </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={MoutainTrailFeedInstagram} data-bs-target="#MoutainTrailFeedInstagram" data-bs-toggle="modal">
+                                <Image src={MoutainTrailFeedInstagram} className="" alt="Réseaux Sociaux"
+                                       height={300} width={300}/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="d-flex justify-content-center">
+                <div className="row">
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={SpaarpleCarte} data-bs-target="#SpaarpleCarte" data-bs-toggle="modal">
+                                <Image className="identite-visuelle" src={SpaarpleCarte} alt="Réseaux Sociaux"
+                                       height={300} width={300}
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={GardeOToitPackaging} data-bs-target="#GardeOToitPackaging" data-bs-toggle="modal">
+                                <Image src={GardeOToitPackaging} className="" alt="Réseaux Sociaux"
+                                       height={300} width={300}/>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 mb-6 d-flex justify-content-center">
+                        <div className="card rounded-1">
+                            <a href={MoutainTrailLogo} data-bs-target="#MoutainTrailLogo" data-bs-toggle="modal">
+                                <Image src={MoutainTrailLogo} className="" alt="Réseaux Sociaux"
+                                       height={300} width={300}/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Fist Row */}
+            <div className="modal fade rounded-top show" id="logoPiaModal" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={LogoPia} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade rounded-top show" id="SanMarcoCarte" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={SanMarcoCarte} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade rounded-top show" id="GardeOToitLogo" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={GardeOToitLogo} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* End First Row */}
+
+            {/* Second Row */}
+            <div className="modal fade rounded-top show" id="GardeOToitAffiche" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={GardeOToitAffiche} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade rounded-top show" id="PiaPackaging" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={PiaPackaging} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade rounded-top show" id="MoutainTrailFeedInstagram" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={MoutainTrailFeedInstagram} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* End Second Row */}
+
+            {/* Three Row */}
+            <div className="modal fade rounded-top show" id="SpaarpleCarte" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={SpaarpleCarte} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade rounded-top show" id="GardeOToitPackaging" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={GardeOToitPackaging} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade rounded-top show" id="MoutainTrailLogo" aria-hidden="true"
+                 aria-labelledby="" tabIndex="-1">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content bg-transparent border-0 text-center">
+                        <div className="modal-body container-fluid overflow-auto p-0">
+                            <Image className="identite-visuelle img-fluid"
+                                   src={MoutainTrailLogo} alt="Réseaux Sociaux"
+                                   height={800} width={800}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* End Three Row */}
+
+
         </div>
     )
 }

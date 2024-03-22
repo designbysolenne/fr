@@ -19,8 +19,10 @@ export default function Services() {
                 </div>
                 <div className="mb-7 text-center">
                     <h3 className="fw-bold font-cursive text-capitalize">Mes Services</h3>
-                    <h5 className="text-secondary">Ensemble, réalisons vos supports de communication à la hauteur de vos
-                        ambitions !</h5>
+                    <h5 className="text-secondary">
+                        Ensemble, réalisons votre identité visuelle et vos supports de communication
+                        à la hauteur de vos ambitions !
+                    </h5>
                 </div>
                 <div className="row">
                     <div className="col-lg-3 col-sm-6 mb-6">
